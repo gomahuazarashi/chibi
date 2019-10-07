@@ -3,7 +3,9 @@ class Q(object):
         self.a = a
         self.b = b
     def __repr__(self):
-       return f'{self.a}/{self.b}'
+        if self.b ==1 :
+            return str(self.a)
+        return f'{self.a}/{self.b}'
 
-q = Q(1,2)
-print(q)
+q3 = Q(3)
+print(q3)
