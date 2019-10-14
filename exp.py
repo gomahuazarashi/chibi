@@ -22,6 +22,7 @@ class Add(object):
 
 e = Add(Val(1), Val(2))
 assert e.eval() == 3
+print(e.eval())
 
 
 e = Add(Val(1),Add(Val(2),Val(3)))
