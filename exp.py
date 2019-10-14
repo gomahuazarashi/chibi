@@ -31,6 +31,9 @@ class Add(Expr):
         self.right = toExper(b)
     def eval(self):
         return self.left.eval() + self.right.eval()
+    def __repr__(self):
+        classname = self .__class__.__name__
+        return f'{classname}({self.left},{self.right})'
 
 e = Add(1,Add(1,2))
 print(e.eval())
