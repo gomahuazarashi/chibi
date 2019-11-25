@@ -1,0 +1,8 @@
+example Expr (1+2)*3
+example Exper 1+2*3
+
+Exper = {Prod '+' Prod #Add} / Prod
+Prod = {Value '*' Value #Mul} / Value
+
+Value = {DIGIT + #Int}/'(' Exper ')'
+DIGIT = [0-9]
